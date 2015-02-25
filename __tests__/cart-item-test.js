@@ -12,7 +12,7 @@ describe('CartItem', function() {
     Item = require('../js/items');
     CartItem = require('../js/cart-item');
 
-    cartItem = new CartItem(Item.all()[0], 30);
+    cartItem = new CartItem(Item.all()[0], 10);
   });
 
   describe('#getBarcode', function () {
@@ -53,4 +53,12 @@ describe('CartItem', function() {
       expect(result).toBe('瓶');
     });
   });
+
+  describe('#getSubtotal', function() {
+    it('should return a commodity subtotal', function() {
+      var result = cartItem.getSubtotal();
+      expect(result).toBe(30);
+    });
+  });
+
 });
