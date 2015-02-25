@@ -1,6 +1,7 @@
 function CartItem(item, count) {
   this.item = item;
-  this.count = count;
+  this.count = count || 0;
+  this.isPromotion = false;
 }
 
 CartItem.prototype.getBarcode = function () {
