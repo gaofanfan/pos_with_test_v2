@@ -23,4 +23,12 @@ describe('CartItem', function() {
     });
   });
 
+  describe('#getName', function () {
+
+    it('should return a commodity name', function () {
+      var result = cartItem.getName();
+      expect(result).toBe('可口可乐350ml');
+    });
+  });
+
 });
