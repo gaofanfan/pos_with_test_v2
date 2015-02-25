@@ -39,4 +39,12 @@ describe('CartItem', function() {
     });
   });
 
+  describe('#getBrand', function () {
+
+    it('should return a commodity brand', function () {
+      var result = cartItem.getBrand();
+      expect(result).toBe('可口可乐');
+    });
+  });
+
 });
