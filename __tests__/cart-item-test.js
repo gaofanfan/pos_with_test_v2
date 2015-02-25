@@ -54,6 +54,7 @@ describe('CartItem', function() {
     });
   });
 
+
   describe('#getSubtotal', function() {
     it('should return a commodity subtotal', function() {
       var result = cartItem.getSubtotal();
@@ -61,4 +62,10 @@ describe('CartItem', function() {
     });
   });
 
+  describe('#getCommodityList', function() {
+    it('should return correct commodityList', function() {
+      var result = cartItem.getCommodityList();
+      expect(result).toBe('名称：可口可乐350ml, 数量：10,单价；3.00,小计；30' + '\n');
+    });
+  });
 });

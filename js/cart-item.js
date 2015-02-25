@@ -27,4 +27,10 @@ CartItem.prototype.getSubtotal = function () {
   return this.getPrice() * this.count;
 };
 
+CartItem.prototype.getCommodityList = function () {
+  return '名称：' + this.getName() + ',' + ' 数量：' +
+  this.count + ',' + '单价；' + this.getPrice().toFixed(2) +
+  ',' + '小计；' + this.getSubtotal() + '\n';
+  };
+
 module.exports = CartItem;
