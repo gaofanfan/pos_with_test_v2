@@ -31,4 +31,12 @@ describe('CartItem', function() {
     });
   });
 
+  describe('#getPrice', function () {
+
+    it('should return a commodity price', function () {
+      var result = cartItem.getPrice();
+      expect(result).toBe(3.00);
+    });
+  });
+
 });
