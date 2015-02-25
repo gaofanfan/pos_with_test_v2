@@ -47,4 +47,10 @@ describe('CartItem', function() {
     });
   });
 
+  describe('#getUnit', function() {
+    it('should return correct commodity unit', function() {
+      var result = cartItem.getUnit();
+      expect(result).toBe('瓶');
+    });
+  });
 });
