@@ -1,4 +1,4 @@
-jest.dontMock('../js/model/items');
+jest.dontMock('../js/model/item');
 jest.dontMock('../js//model/cart-item');
 
 describe('CartItem', function() {
@@ -9,7 +9,7 @@ describe('CartItem', function() {
 
   beforeEach(function() {
 
-    Item = require('../js/model/items');
+    Item = require('../js/model/item');
     CartItem = require('../js/model/cart-item');
 
     cartItem = new CartItem(Item.all()[0], 10);
