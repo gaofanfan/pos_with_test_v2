@@ -22,3 +22,5 @@ CartItem.prototype.getBrand = function () {
 CartItem.prototype.getUnit = function () {
   return this.item.unit;
 };
+
+module.exports = CartItem;
