@@ -1,4 +1,4 @@
-// jest.autoMockoff();
+// jest.autoMockOff();
 //
 // var moment = require('moment');
 // describe('Iventory', function () {
