@@ -10,3 +10,5 @@ BrandDiscount.prototype.constructor = BrandDiscount;
 BrandDiscount.prototype.buildPromotionName = function () {
   return this.brand + '品牌打折';
 };
+
+module.exports = BrandDiscount;
