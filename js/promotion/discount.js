@@ -8,7 +8,7 @@ Discount.prototype.buildPromotionName = function () {
 };
 
 Discount.prototype.getPromotionMoney = function () {
-  return 1 * (this.subtotal * (1 - this.dicount)).toFixed(2);
+  return 1 * (this.subtotal * (1 - this.discount)).toFixed(2);
 };
 
 module.exports = Discount;

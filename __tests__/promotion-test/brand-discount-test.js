@@ -15,4 +15,14 @@ describe('BrandDiscount', function () {
 
     });
   });
+
+  describe('#getPromotionMoney()', function () {
+
+    it('should return Promotion money', function () {
+
+      var result = discount.getPromotionMoney();
+      expect(result).toBe(2.55);
+
+    });
+  });
 });
