@@ -1,5 +1,5 @@
-jest.dontMock('../js/model/item');
-jest.dontMock('../js//model/cart-item');
+jest.dontMock('../../js/model/item');
+jest.dontMock('../../js//model/cart-item');
 
 describe('CartItem', function() {
 
@@ -9,13 +9,13 @@ describe('CartItem', function() {
 
   beforeEach(function() {
 
-    Item = require('../js/model/item');
-    CartItem = require('../js/model/cart-item');
+    Item = require('../../js/model/item');
+    CartItem = require('../../js/model/cart-item');
 
     cartItem = new CartItem(Item.all()[0], 10);
   });
 
-  describe('#getBarcode', function () {
+  describe('#getBarcode()', function () {
 
     it('should return a barcode', function () {
       var result = cartItem.getBarcode();
@@ -23,7 +23,7 @@ describe('CartItem', function() {
     });
   });
 
-  describe('#getName', function () {
+  describe('#getName()', function () {
 
     it('should return a commodity name', function () {
       var result = cartItem.getName();
@@ -31,7 +31,7 @@ describe('CartItem', function() {
     });
   });
 
-  describe('#getPrice', function () {
+  describe('#getPrice)', function () {
 
     it('should return a commodity price', function () {
       var result = cartItem.getPrice();
@@ -39,7 +39,7 @@ describe('CartItem', function() {
     });
   });
 
-  describe('#getBrand', function () {
+  describe('#getBrand()', function () {
 
     it('should return a commodity brand', function () {
       var result = cartItem.getBrand();
@@ -47,7 +47,7 @@ describe('CartItem', function() {
     });
   });
 
-  describe('#getUnit', function() {
+  describe('#getUnit()', function() {
     it('should return correct commodity unit', function() {
       var result = cartItem.getUnit();
       expect(result).toBe('瓶');
@@ -55,14 +55,14 @@ describe('CartItem', function() {
   });
 
 
-  describe('#getSubtotal', function() {
+  describe('#getSubtotal()', function() {
     it('should return a commodity subtotal', function() {
       var result = cartItem.getSubtotal();
       expect(result).toBe(30);
     });
   });
 
-  describe('#getCommodityList', function() {
+  describe('#getCommodityList()', function() {
     it('should return correct commodityList', function() {
       var result = cartItem.getCommodityList();
       expect(result).toBe('名称：可口可乐350ml, 数量：10瓶,单价；3.00(元),小计；30.00(元)' + '\n');
